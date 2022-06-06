@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .grid-form {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+        }
+
+        .btn {
+            background-color: yellowgreen;
+            color: black;
+            font-weight: 600;
+            width: 120px;
+            text-align: center;
+            font-size: 15px;
+            padding: 10px;
+         }
+
+         .btn:hover {
+             background-color: black;
+             color: yellowgreen;
+         }
+
+         .btn-space {
+             margin-top: 20px;
+         }
+         
+         h6 {
+             margin: 0 5px;
+         }
+
+         body {
+             margin: 0;
+         }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div style="margin: 0 0 50px 150px;">
+            <h2>Connect with our Sales team</h2>
+        </div>
+
+        <div style="width: 60%;
+        margin: auto;">
+            <form>
+                <div class="grid-form " >
+                    <div class="grid-name">
+                        <div style="margin-bottom: 5px;">
+                            <label for="name">Name ..</label>
+                        </div>
+                        <div>
+                            <input style="width: 100%; height: 20px;" type="text" id="name"
+                                placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="grid-email">
+                        <div style="margin-bottom: 5px;">
+                            <label for="email">Email Address ..</label>
+                        </div>
+                        <div>
+                            <input style="width: 100%;height: 20px;" type="text" id="email"
+                                placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="grid-company">
+                        <div style="margin-bottom: 5px;">
+                            <label for="company">Company Name ..</label>
+                        </div>
+                        <div style="width: 100%;">
+                            <input style="width: 100%; height: 20px;" type="text" id="company"
+                                placeholder="Company Name">
+                        </div>
+                    </div>
+                    <div class="grid-country">
+                        <div style="margin-bottom: 5px;">
+                            <label for="country">Country ..</label>
+                        </div>
+                        <div>
+                            <input style="width: 100%; height: 20px;" type="text"
+                                id="country" placeholder="Country">
+                        </div>
+                    </div>
+                </div>
+                <div style="margin: 50px 0;">
+                    <div>
+                        <h6>Consent Contact ..</h6>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="consent">
+                        <label for="consent"> I have read and acknowledged the Privacy Statement and agree that
+                            THRESHOLD may contact me at the address above.</label><br>
+                    </div>
+                </div>
+                <div class="btn-space">
+                    <button class="btn" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
